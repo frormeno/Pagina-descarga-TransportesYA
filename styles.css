@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004aad;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffa726;
+}
+
+.hero-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el carrusel en el contenedor */
+    overflow: hidden;
+    position: relative;
+    max-width: 60%; /* Reduce el ancho del carrusel */
+    height: 500px; /* Define una altura específica para el carrusel */
+    margin: 2rem auto; /* Centra el carrusel en la página */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle estilo */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%; /* Asegura que ocupe toda la altura del contenedor */
+}
+
+.carousel-images img {
+    width: 100%; /* Ocupa el 100% del contenedor del carrusel */
+    height: 100%; /* Escala las imágenes para que ocupen todo el contenedor */
+    object-fit: cover; /* Recorta las imágenes manteniendo proporciones */
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+}
+
+.prev, .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.prev {
+    left: 10px; /* Ajusta la posición dentro del carrusel */
+}
+
+.next {
+    right: 10px; /* Ajusta la posición dentro del carrusel */
+}
+
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.team-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.team-images img {
+    width: 150px; /* Tamaño más pequeño */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Download Section */
+.download {
+    padding: 4rem 2rem;
+    background-color: #f1f5ff;
+    text-align: center;
+}
+
+.download h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.download p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #ffa726; /* Naranja llamativo */
+    color: #fff; /* Texto blanco */
+    padding: 1rem 2rem; /* Tamaño más grande */
+    border-radius: 10px; /* Bordes más redondeados */
+    text-decoration: none;
+    font-size: 1.2rem; /* Fuente más grande */
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1.5rem; /* Mayor separación con la imagen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    position: relative; /* Para mantener la sombra en su lugar */
+    margin-bottom: 2rem;
+}
+
+.download-button:hover {
+    background-color: #ff9800; /* Tono más oscuro al pasar el ratón */
+    transform: scale(1.1); /* Hace que el botón crezca ligeramente */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más grande al pasar el ratón */
+}
+
+.app-preview img {
+    width: 300px; /* Tamaño reducido */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004aad;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+}
