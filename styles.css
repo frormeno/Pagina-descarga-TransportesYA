@@ -138,14 +138,16 @@ body {
 
 #qr-code {
     text-align: center;
-    margin: 1rem auto;
+    margin-top: 20px;
 }
 
 #qr-code img {
     width: 150px;
     height: 150px;
-    margin-top: 1.5rem;
+    margin: 10px auto;
+    border-radius: 10px;
 }
+
 
 /* Footer */
 footer {

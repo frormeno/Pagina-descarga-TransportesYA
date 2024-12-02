@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Detectar tipo de dispositivo
     const downloadContent = document.getElementById('download-content');
-    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    const isMobile = /android|iphone|ipad|ipod/i.test(userAgent.toLowerCase());
 
     if (isMobile) {
         // Mostrar botón de descarga en dispositivos móviles
